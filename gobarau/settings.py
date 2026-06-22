@@ -31,12 +31,40 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
+    # added by me
+    'unfold',
+    'unfold.contrib.filters',
+    'unfold.contrib.forms',
+    'unfold.contrib.import_export',
+    'import_export',
+    
+    # Django built-in apps
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    
+    # more third-party apps
+    'rest_framework',
+    'rest_framework_simplejwt',
+    'corsheaders',
+    'cloudinary',
+    'cloudinary_storage',
+    
+    # My apps
+    'core',
+    'apps.accounts',
+    'apps.administration',
+    'apps.people',
+    'apps.academics',
+    'apps.admissions',
+    'apps.finance',
+    'apps.communication',
+    'apps.content',
+    'apps.welfare',
+    'apps.services',
 ]
 
 MIDDLEWARE = [
@@ -50,6 +78,8 @@ MIDDLEWARE = [
 ]
 
 ROOT_URLCONF = 'gobarau.urls'
+
+AUTH_USER_MODEL = "accounts.User"
 
 TEMPLATES = [
     {

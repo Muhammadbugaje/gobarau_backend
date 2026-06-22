@@ -1,0 +1,4 @@
+from apps.welfare.serializers.health import HealthProfileSerializer, ClinicVisitSerializer, MedicationSerializer
+from apps.welfare.serializers.counselling import CounsellingSessionSerializer
+from apps.welfare.serializers.discipline import DisciplinaryRecordSerializer, MeritDeductionSerializer
+from apps.welfare.serializers.intervention import InterventionCaseSerializer, InterventionNoteSerializer, AbsenceSerializer, WelfareReportSerializer

@@ -1,0 +1,8 @@
+from apps.academics.serializers.structure import ClassSerializer
+from apps.academics.serializers.subjects import SubjectSerializer, TeacherClassSubjectSerializer
+from apps.academics.serializers.grading import CAConfigurationSerializer
+from apps.academics.serializers.timetable import TimetableSerializer, ExamTimetableSerializer
+from apps.academics.serializers.scores import ScoreSerializer, ReportCardSerializer, AssignmentSerializer, AssignmentSubmissionSerializer
+from apps.academics.serializers.attendance import AttendanceRecordSerializer, AttendanceSummarySerializer
+from apps.academics.serializers.exams import ExamRegistrationSerializer, ExamResultSerializer
+from apps.academics.serializers.tahfeez import JuzProgressSerializer, RecitationSessionSerializer
